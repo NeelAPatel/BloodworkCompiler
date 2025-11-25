@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bloodworkcompiler-backend"
+version = "0.1.0"
+description = "Parsing and normalization backend for Bloodwork Compiler"
+authors = [{name = "Bloodwork Compiler"}]
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".",
+]
