@@ -12,8 +12,8 @@
 - Modifying encryption unless the task explicitly says so.
 
 ## Tools & Conventions
-- Python: 3.11+, FastAPI, SQLAlchemy 2.0 (async), Alembic, pytest.
-- DB: Postgres 16.
+- Python: 3.14+, FastAPI, SQLAlchemy, Alembic, pytest.
+- DB: Postgres.
 - UI: Next.js (TS), Plotly charts.
 - Storage: local FS now, S3 later (presigned).
 - Queue: none initially; add Redis/RQ if parsing is slow.
