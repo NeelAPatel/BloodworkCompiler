@@ -1,0 +1,29 @@
+# Cursor Repo Rules (applies to all AI actions)
+
+## Scope & Safety
+- Never add real secrets (API keys, tokens, emails). Use placeholders and `.env.example`.
+- Do not change encryption/security code unless explicitly asked and tested.
+- Keep parsing logic deterministic with tests. No non-deterministic randomness in parsers.
+
+## Code Quality
+- Python: type hints required, docstrings for public functions, 100% lint clean.
+- Testing: add/extend pytest for any new code. Provide a failing test FIRST when fixing a bug.
+- Database: use Alembic migrations; never modify tables without a migration script.
+
+## Architecture
+- Keep modules small and focused: parsers/, models/, services/, api/.
+- Do not add new external dependencies without approval & rationale in PR description.
+- Prefer pure functions in parsers; no I/O inside parsing helpers.
+
+## Commit & PR
+- Use conventional commits: feat:, fix:, chore:, refactor:, test:, docs:.
+- Always include a summary of what changed, why, and how it was tested.
+- Large changes MUST be split into small PRs (max ~500 lines diff).
+
+## Prompts (patterns)
+- When asked to change code, show a short plan first (bullets) then propose the diff.
+- When unsure, ask focused questions with 2–3 crisp options and a default recommendation.
+
+## Non-Goals
+- Do not wire external services (Kafka, Airflow, vLLM) unless the task requires it.
+- Do not add UI frameworks beyond Next.js + Plotly for MVP.

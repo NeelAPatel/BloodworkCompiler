@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.coverage
+.coverage*
+htmlcov/
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+# Data & uploads
+data/uploads/
+data/fixtures/*.parquet
+data/fixtures/*.csv
+AGENT_LOGS/
+*.log
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
