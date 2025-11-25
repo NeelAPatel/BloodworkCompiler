@@ -1,0 +1,16 @@
+{
+  "name": "bloodworkcompiler-backend",
+  "version": "0.1.0",
+  "description": "Runtime dependencies for the Phase 1 PDF parser",
+  "dependencies": {
+    "pdfplumber": "^0.11.4",
+    "pytesseract": "^0.3.13",
+    "pillow": "^11.0.0",
+    "pydantic": "^2.7.0",
+    "pandas": "^2.2.0",
+    "pyarrow": "^16.0.0"
+  },
+  "devDependencies": {
+    "pytest": "^7.4.0"
+  }
+}
