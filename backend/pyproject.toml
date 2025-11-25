@@ -1,0 +1,14 @@
+[project]
+name = "bloodwork-compiler-backend"
+version = "0.1.0"
+description = "Parsing and normalization utilities for Bloodwork Compiler."
+requires-python = ">=3.11"
+dependencies = [
+    "pdfplumber>=0.11.4",
+    "pytesseract>=0.3.13",
+    "Pillow>=11.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
